@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Kalnia+Glaze:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Sixtyfour+Convergence&display=swap');
+
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-family: kalnia glaze, sans-serif;
+    /* this is supposed to be Kalnia Glazed font*/
+
+    
+}
+body{
+    background-color: aqua;
+
+}
+
+button{
+    font-size: medium;
+    color: blue;
+    font-family: sixtyfour convergence, sans-serif; 
+    
+}
+div{
+text-align: center;
+color: blueviolet;
+}
