@@ -10,17 +10,33 @@ h1{
     
 }
 body{
-    background-color: aqua;
+    background-image: url('14154.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
+}
+cursor{
+    cursor: url('—Pngtree—human organ nose_4712578.png');
 }
 
 button{
     font-size: medium;
-    color: blue;
-    font-family: sixtyfour convergence, sans-serif; 
+    color: green;
+    font-family: sixtyfour
+    convergence, sans-serif; 
     
 }
+
 div{
-text-align: center;
-color: blueviolet;
+    text-align: center;
+    color: blueviolet;
+}
+
+
+p{
+    text-align: center;
+    border: palevioletred;
+    font-size: medium;
+
 }

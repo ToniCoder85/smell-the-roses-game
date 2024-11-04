@@ -5,14 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smell the Roses Game</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</head> 
+<!-- <script>$("button").on("click", function() {alert("clicked")});</script> 
+calling the button to react  -->
 <body>
     <h1>Welcome to Roseland</h1>
-    <div>Toni's magical Flower Shop where each selection of flower gets you closer to divine wisdom. </div>
-    <div id="div2">Play this inconic mystical Game</div>
-    <button>Pick Flower</button>
-    <p>Flower Choices: <div id="flowercount" style "display: inline;">0</div></p>
+<div id="game">
+<div id= "openingMsg">"Toni's magical Flower Shop where each selection of flower gets you closer to divine wisdom."</div>
+<!-- <div id= "cursor"></div> -->
+
+<p>Play this inconic mystical Game</p>
+
+<p>Please enter your details to START</p>
+    
+<form id="playerForm">
+    <input type="text" id="Name" name="name" placeholder="Enter Name" required> 
+    <br>
+    <input type="number" id="Age" age="age" placeholder="Enter age" required> 
+    <br>
+    <button type="submit">START</button>
+</form>    
+
+<div id="flowerCounter">Flowers Picked: <span id="flowerCount">0</span></div>
+    <!-- <input type="text" id="Name">replaced on line 21 in <form> tag</form> -->
+
+    <!-- <button>"Pick Flower"</button> -->
+
+    
+    <p>Flower Choices: (Click button above to pick flowers)</p>
+        <!-- <div id="flowercount" style "display: inline;">0</div> -->
+    
     <!-- chatgpt "how do you aling certain div" -->
+     <div id="winMessage" style="display: none;"> Enjoy life and smell the roses
+        </div>
     <script>src="app.js"</script>
     
 
