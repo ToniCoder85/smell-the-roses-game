@@ -38,6 +38,10 @@ const flowerContainer = document.getElementById('flower-Container');
         // Check if flowerCount is 8 to display win message
         if (flowerCount === 8) {
             document.getElementById('winMessage').style.display = "block";
+
+            // WE NEED TO STOP Now
+            document.body.removedEventslistner("click", pickFlower);
+            gameEnded = true;
         }
     });
 
