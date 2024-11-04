@@ -17,7 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
         greetingToPlayer();
         alert(`Hello Flowerchild ${playerName}! Start picking flowers.`);
     });
-    
+    const flowers = ['blurose.jpeg', 'rose.jpeg'];
+    function pickFlower() {
+        flowerContainer.innerHTML = '';
+    }
+
     // Picking A Flower button event listener
     document.getElementById('pickFlower').addEventListener('click', () => {
         flowerCount++;
