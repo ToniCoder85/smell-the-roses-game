@@ -5,6 +5,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     let playerName = "";
     let flowerCount = 0;
+//    Gettin the flower container element
+    
+const flowerContainer = document.getElementById('flower-Container');
 
     // Greeting function
     function greetingToPlayer() {
@@ -32,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
             askQuestion();
         }
 
-        // Check if flowerCount is 12 to display win message
-        if (flowerCount === 12) {
+        // Check if flowerCount is 8 to display win message
+        if (flowerCount === 8) {
             document.getElementById('winMessage').style.display = "block";
         }
     });
