@@ -10,29 +10,19 @@ let flowerCount = 0;
   function greetingToPlayer() {
     console. log(`Hello Flowerchild ${playerName}`);
   }
-//   Start Button execution
-    document.getElementById('start button').addEventListener('click',() => {
-        playerName = document.getElementById('Name').value;
-        greetingToPlayer();
-        alert(`Hello Flowerchild ${playerName}! Start picking flowers.`);
-        });
-
-//    greetingToPlayer();
-    // let flowerCount = 0;
-
-// Picking A Flower button event listner
-document.getElementById('pickFlower').addEventListener('click',() => {
-    flowerCount++; 
-
- document.getElementById('flowerCount').textContent = flowerCount;
-    if (flowerCount ===12) {
-    document.getElementById('winMessage').style.display = "block";
-}
+// Start Button execution
+document.getElementById('startButton').addEventListener('click', () => {
+    playerName = document.getElementById('Name').value;
+    greetingToPlayer();
+    alert(`Hello Flowerchild ${playerName}! Start picking flowers.`);
 });
 
-function askQuestion(){
-    if (flowercount === 5) {
-        let reponse = prompt("Have you  hugged a tree before?");
-        if(Response.toLowercase() === "no") {
-            alert("Go ahead and pick a flower!");
-        }    }
+// Picking A Flower button event listener
+document.getElementById('pickFlower').addEventListener('click', () => {
+    flowerCount++;
+    document.getElementById('flowerCount').textContent = flowerCount;
+
+    // Check if flowerCount is 5 to ask the question
+    if (flowerCount === 5) {
+        askQuestion();
+    }

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Kalnia+Glaze:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Kalnia+Glaze:wght@100..700&family=Sixtyfour+Convergence&display=swap');
+Users/toninah/code/ga/projects/smell-the-roses-game/rose.jpeg
+/Users/toninah/code/ga/projects/smell-the-roses-game/bouquetrs.jpeg
 
 h1{
     text-align: center;
@@ -14,17 +16,48 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blueviolet;
+    cursor: url('—Pngtree—human organ nose_4712578.png'); auto
+
+
+#flowerCounter{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    font-style: 18 px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* w3school.com "border" */
+}
+#gameContainer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 400 px;
+}
 
 }
-cursor{
-    cursor: url('—Pngtree—human organ nose_4712578.png');
-}
+/* cursor{ */
+    /* cursor: url('—Pngtree—human organ nose_4712578.png'); auto */
 
 button{
-    font-size: medium;
-    color: green;
-    font-family: sixtyfour
-    convergence, sans-serif; 
+    width: 45px;
+    height: 45px;
+    background-image: url(ulrose.jpeg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    outline: none;
+    margin-top: 10px;
+    display:inline-block;
     
 }
 
