@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 const flowerContainer = document.getElementById('flower-Container');
 
+
     // Greeting function
     function greetingToPlayer() {
         console.log(`Hello Flowerchild ${playerName}`);
@@ -18,7 +19,8 @@ const flowerContainer = document.getElementById('flower-Container');
     document.getElementById('startButton').addEventListener('click', () => {
         playerName = document.getElementById('Name').value;
         greetingToPlayer();
-        alert(`Hello Flowerchild ${playerName}! Start picking flowers.`);
+        const messageElement = document.querySelector('#message');
+        messageElement.textContent = (`Hello Flowerchild ${playerName}! Start picking flowers`);
     });
     const flowers = ['blurose.jpeg', 'rose.jpeg'];
     function pickFlower() {
@@ -49,7 +51,10 @@ const flowerContainer = document.getElementById('flower-Container');
     function askQuestion() {
         let response = prompt("Have you hugged a tree before?");
         if (response && response.toLowerCase() === "no") {
-            alert("Go ahead and pick a flower!");
+            const message2Element = document.querySelector('#message2');
+            message2Element.textContent = (`Go ahead and pick a flower!`);
+    
         }
+
     }
 });
