@@ -5,6 +5,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     let playerName = "";
     let flowerCount = 0;
+    let gameEnded = false;
+
 //    Gettin the flower container element
     
 const flowerContainer = document.getElementById('flower-Container');
@@ -25,6 +27,11 @@ const flowerContainer = document.getElementById('flower-Container');
     const flowers = ['blurose.jpeg', 'rose.jpeg'];
     function pickFlower() {
         flowerContainer.innerHTML = '';
+    }
+
+    // update flowerCount display
+    function updateflowerCountDisplay() {
+        document.getElementById('flowerCountDisplay').textContent = flowerCount;
     }
 
     // Picking A Flower button event listener
